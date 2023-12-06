@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator page</title>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <center>
+        <table style="width: 600px;height:250px; text-align: center;">
+            <thead>
+                <th colspan="4" style="height: 30px;">
+                    Calculator
+                </th>
+            </thead>
+            <tr>
+                <td >Enter Number 1 : </td>
+                <td colspan="3"><input type="text" id="1" style="width:200px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td >Enter Number 2 : </td>
+                <td colspan="3"><input type="text" id="2" style="width:200px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td >Result : </td>
+                <td colspan="3"><input type="text" id="3" style="width:200px;height: 30px;"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Addition" class="Cc" id="101" onclick="add()"></td>
+                <td><input type="button" value="Subtraction" class="Cc" id="102" onclick="sub()"></td>
+                <td><input type="button" value="Multiplicattion" class="Cc" id="103" onclick="multi()"></td>
+                <td><input type="button" value="Division" class="Cc" id="104" onclick="divi()"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="button" value="Reset" class="Cc" id="201" onclick="reset()"></td>
+            </tr>
+        </table>
+    </center>
+    <script> 
+       
+        function add(){
+            var res=0;
+            refToTxtN1 = document.getElementById(1);
+            refToTxtN2 = document.getElementById(2);
+            res=parseInt(refToTxtN1.value) + parseInt(refToTxtN2.value);
+            refToTxtRes = document.getElementById(3);
+        }
+        function sub(){
+            res=0;
+            refToTxtN1 = document.getElementById(1);
+            refToTxtN2 = document.getElementById(2);
+            res=parseInt(refToTxtN1.value)- parseInt(refToTxtN2.value);
+            refToTxtRes = document.getElementById(3);
+        }
+        function multi(){
+            res=0;
+            refToTxtN1 = document.getElementById(1);
+            refToTxtN2 = document.getElementById(2);
+            res=parseInt(refToTxtN1.value)* parseInt(refToTxtN2.value);
+            refToTxtRes = document.getElementById(3);
+        }
+        function divi(){
+            res=0;
+            refToTxtN1 = document.getElementById(1);
+            refToTxtN2 = document.getElementById(2);
+            res=parseFloat(refToTxtN1.value)/ parseFloat(refToTxtN2.value);
+            refToTxtRes = document.getElementById(3);
+            refToTxtRes.value=res;
+        }
+        function reset(){
+            refToTxtN1 = document.getElementById(1);
+            refToTxtN2 = document.getElementById(2);
+            refToTxtN1.value="";
+            refToTxtN2.value="";
+            refToTxtRes = document.getElementById(3);
+            refToTxtRes.value="";
+        }
+    </script>
+</body>
+</html>

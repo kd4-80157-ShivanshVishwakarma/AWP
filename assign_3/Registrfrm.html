@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>From Page</title>
+    <link rel="stylesheet" href="Rstyle.css">
+</head>
+<body>
+    <center><h1><u>Registration Form</u></h1></center>
+    <form action="sunbeamkarad.com" method="get">
+        <img src="img1.jpg" alt="Photo" class="Img">
+        <table  class="table">
+            <tr>
+                <td class="Fonts">Name*</td>
+                <td ><input type="text" name="myName" class="Sizebx" required></td>
+            </tr>
+            <tr>
+                <td class="Fonts">Birthdate*</td>
+                <td ><input type="date" name="bdate" style="font-size: larger;"></td>
+            </tr>
+            <tr>
+                <td class="Fonts">Email*</td>
+                <td ><input type="email" placeholder="i.e..johnwick89@gmail.com" required pattern="^[a-zA-Z0-9+_.-]+
+                    @[a-zA-Z0-9]+$" class="Sizebx"></td>
+            </tr>
+            <tr>
+                <td class="Fonts">Password*</td>
+                <td ><input type="password" class="Sizebx"></td>
+            </tr>
+            <tr>
+                <td class="Fonts">Address*</td>
+                <td>
+                    <table style="height:80px; width:100%;">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <select name="state" class="Addrbx">
+                                    <option value="90">Tamil Nadu</option>
+                                    <option value="91"> Jammu&Kashmir</option>
+                                    <option value="92">Gujrat</option>
+                                    <option value="93">West Bengal</option>
+                                </select>
+                                <br><br><center>State</center>
+                            </td>
+                            <td>
+                                <select name="district" class="Addrbx">
+                                    <option value="90">Ahmedabad</option>
+                                    <option value="91">Srinagar</option>
+                                    <option value="92">Chennai</option>
+                                    <option value="93">Kolkata</option>
+                                </select>
+                                <br><br><center>District</center>
+                            </td>
+                            <td>
+                                <select name="city" class="Addrbx">
+                                    <option value="90">Chennai</option>
+                                    <option value="91">Surat</option>
+                                    <option value="92">Kolkata</option>
+                                    <option value="93">Anantnag</option>
+                                </select>
+                                <br><br><center>City</center>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="Fonts">Gender*</td>
+                <td>
+                    <input type="radio" name="gender" value="01"> Male
+                    <input type="radio" name="gender" value="02"> Female
+                    <input type="radio" name="gender" value="03"> Other
+                </td>
+            </tr>
+            <tr>
+                <td class="Fonts">Upload</td>
+                <td><input type="file" name="myFile"></td>
+            </tr>
+            <tr>
+                <td class="Fonts">Select your course*</td>
+                <td>
+                    <select name="course" class="Addrbx">
+                    <option value="60">AI & Machine Learning</option>
+                    <option value="61">DAC</option>
+                    <option value="62">DBDA</option>
+                    <option value="63">DITISS</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="padding-left: 120px;">
+                    <input type="submit" name="sub" value="Register" class="Fonts">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="submit" name="clr" value="Clear" class="Fonts">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
